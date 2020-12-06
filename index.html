@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCWebDev - Abel</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="./resources/css/lightbox.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="./img/programmermaleIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<main>
+<!-- top section with intro animation -->
+<section id="home">
+    <div class="home">
+        <header class="nav-header">
+            <!-- <h1 id='logo'><a href="./index.htm">Home.</a></h1> -->
+            <ul class='nav-index'>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+        </header>
+    
+        <div class="title-banner">
+            <h1><span>ABEL GARRIDO</span></h1>
+             <h2>Web Developer</h2>
+                <div class="resume-link">
+                    <a href="https://docs.google.com/document/d/1hSwhOcMqTUkXQ_b1821kmGlHio5g7lD3EQXAU6Lz6A4/edit?usp=sharing" target="_blank">
+                    <button>Résume</button></a>
+                </div>
+        </div>
+    </div>
+    <div class="banner-filter"></div>
+
+    <div id="lead-down">
+            <a href="#about-me">
+      <span>
+        <i class="fa fa-chevron-down"></i>
+      </span>
+    </a>
+      </div>
+
+</section>
+
+    <!-- about me section **************************************************************** -->
+    <section id="about-me">
+        <h2 class="title">About Me</h2>
+        <div class="about-details">
+          <p class="lead">
+            <span>W</span>elcome to my page, my name is Abel, and I'm an upcoming web
+            developer in the DC area transitioning from the field of accountanting.
+            For a few years now I've dabbled with font end coding such as html & CSS, 
+            but never found the right time to dedicate myself to learning more. That all changed
+            when I found myself let go in April at the start of the downturn due
+            to the pandemic (still a little weird writing that). I decided to
+            commit myself more seriously, and what started with some more
+            advanced lessons quickly evolved into a coding
+            bootcamp as a full stack developer.
+            <br />
+            <br />
+            I'm diving in both feet on this new adventure, and my only regret is
+            that I didn't do it sooner. I appreciate you visiting my site, and I
+            hope we can work together soon.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- portfolio section *************************************************************** -->
+<section id="portfolio">
+    <h2 class='title'>Portfolio</h2>
+    <div class="portfolio-box">
+            <ul class="project-names">
+                <li>Project1</li>
+                <li>Project2</li>
+                <li>Project3</li>
+                <li>Project4</li>
+            </ul>
+        <div class="example-project">
+            <!-- <div class="img"> -->
+                <img src="./SiteImages/travelSite.jpg" alt="travel site">
+            <!-- </div> -->
+            <div class="project-desc">
+                <h3>Travel Site</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium a quisquam quo. Enim illum facilis vero modi tempora doloremque.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- education section ******************************************************** -->
+<section id="education">
+    <h2 class='title'>Education & Skills</h2>
+    <div class="edu-info">
+        <ul class=skills>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL Database</li>
+            <li>Python</li>
+            <li>MongoDB</li>
+            <li>Jupyter Notebook</li>
+            <li>PHP</li>
+            <li>React</li>
+        </ul>
+        <div class="edu-line"></div>
+        <div class="raddy">
+            <h3>Radford University - Radford Va </h3>
+            <h4>Bachelor in Communication</h4>
+        </div>
+    </div>
+</section>
+<!-- personal blurb section ************************************************ -->
+<section id="personal">
+    <h2 class='title'>Get to know me!</h2>
+    <div class="personal-blurb">
+        <p>  
+        As well as growing up in the DC area I have been fortunate to satisfy some of my 
+        natural curiosity of the world. I try to take a yearly trek, and push my personal boundaries. 
+        I find it to be a powerful grounding experience to not just learn about myself, 
+        but others as well in the short amount of time we have in this world.
+        Below are a few pictures I've taken over that time. 
+        </p>
+    </div>
+</section>
+<!-- carousel images ********************************************************************* -->
+<section id="gallery">
+    <div class="gallbox">
+        <a
+          href="./resources/images/cafedelmarface_pr.jpg"
+          data-lightbox="mygallery"
+          data-title="Vieques -Puerto Rico"
+        >
+          <img src="./resources/images/cafedelmarface_pr-small.jpg" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/dcArtAllNight.JPG"
+          data-lightbox="mygallery"
+          data-title="DC -USA"
+        >
+          <img src="./resources/images/dcArtAllNight-small.JPG" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/dcUmbrellas.jpg"
+          data-lightbox="mygallery"
+          data-title="DC -USA"
+        >
+          <img src="./resources/images/dcUmbrellas-small.jpg" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/chicagoPiccaso.jpg"
+          data-lightbox="mygallery"
+          data-title="Chicago -USA"
+        >
+          <img src="./resources/images/chicagoPiccaso-small.jpg" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/colombiaPirahna.jpg"
+          data-lightbox="mygallery"
+          data-title="Leticia -Colombia"
+        >
+          <img src="./resources/images/colombiaPirahna-small.jpg" alt="" />
+        </a>
+      </div>
+      <div class="gallbox">
+        <a
+          href="./resources/images/dcPennAve.JPG"
+          data-lightbox="mygallery"
+          data-title="DC -USA"
+        >
+          <img src="./resources/images/dcPennAve-small.JPG" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/dcRooftop.jpg"
+          data-lightbox="mygallery"
+          data-title="DC -USA"
+        >
+          <img src="./resources/images/dcRooftop-small.jpg" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/double_abel_negatives.jpg"
+          data-lightbox="mygallery"
+          data-title="DC -USA"
+        >
+          <img
+            src="./resources/images/double_abel_negatives-small.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/Denver.jpg"
+          data-lightbox="mygallery"
+          data-title="Denver -USA"
+        >
+          <img src="./resources/images/Denver-small.jpg" alt="" />
+        </a>
+      </div>
+      <div class="gallbox">
+        <a
+          href="./resources/images/guatemalScenery3.JPG"
+          data-lightbox="mygallery"
+          data-title="Guatemala"
+        >
+          <img src="./resources/images/guatemalScenery3-small.jpg" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/MeWhaleShark2-cartoon_circle.jpg"
+          data-lightbox="mygallery"
+          data-title="Indonesia"
+        >
+          <img
+            src="./resources/images/MeWhaleShark2-cartoon_circle-small.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/peruHH.JPG"
+          data-lightbox="mygallery"
+          data-title="Huay-Huash -Peru"
+        >
+          <img src="./resources/images/peruHH-small.JPG" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/peruHH2.JPG"
+          data-lightbox="mygallery"
+          data-title="Huay-Huash -Peru"
+        >
+          <img src="./resources/images/peruHH2-small.JPG" alt="" />
+        </a>
+      </div>
+      <div class="gallbox">
+        <a
+          href="./resources/images/peruHH3.JPG"
+          data-lightbox="mygallery"
+          data-title="Huay-Huash -Peru"
+        >
+          <img src="./resources/images/peruHH3-small.JPG" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/prMichelle.jpg"
+          data-lightbox="mygallery"
+          data-title="San Juan -Puerto Rico"
+        >
+          <img src="./resources/images/prMichelle-small.jpg" alt="" />
+        </a>
+      </div>
+
+      <div class="gallbox">
+        <a
+          href="./resources/images/guatemalaScenery.JPG"
+          data-lightbox="mygallery"
+          data-title="Guatemala"
+        >
+          <img src="./resources/images/guatemalaScenery-small.jpg" alt="" />
+        </a>
+      </div>
+
+</section>
+<!-- contact section -->
+<section id="contact">
+    <h2 class='title'>Contact</h2>
+    <h4 class="text-center">I'd really like to year from you! Please leave a message below.</h4>
+    <div class="contact-form">
+      <form   action="https://formspree.io/xnqgknrk" method="POST">
+        <label>
+          <input type="text" name="_replyto" placeholder="Email" />
+        </label>
+        <label>
+          <textarea name="message" placeholder="Your message!"></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+</section>
+
+<!-- footer section -->
+<section class="footer-container">
+    <div class="copyright">
+      <p>Copyright &copy; Abel Garrido</p>
+    </div>
+
+    <div class="up-botton">
+      <a href="#home"
+        ><span id="to-top"> <i class="fa fa-chevron-up"></i> </span
+      ></a>
+    </div>
+
+    <div class="social">
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/abel-garrido-44ab231b1/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/bohemianabe/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bohemianabe" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<!-- nav bar -->
+<nav class="nav-bar">
+    <ul class="nav-links">
+        <h3>Twitter</h3>
+        <h3>Instagram</h3>
+        <h3>GitHub</h3>
+        <div class="contact2">
+            <h2>Stay in Touch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, sed!</p>
+        </div>
+    </ul>
+</nav>
+<!-- swipe divs for page transitions -->
+<div class="swipe swipe1"></div>
+<div class="swipe swipe2"></div>
+<div class="swipe swipe3"></div>
+    <!-- script tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="./resources/js/app.js"></script>
+    <script src="./resources/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
