@@ -35,6 +35,20 @@ p {
   background-color: #b9bfc4;
   border-bottom-left-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
+  z-index: 2;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-header {
+    /* border: 2px solid pink; */
+  }
+  .home-li {
+    display: none;
+  }
+  .contact-li {
+    display: none;
+  }
 }
 
 .nav-index {
@@ -49,6 +63,13 @@ p {
   list-style: none;
   font-weight: bold;
   /* color: #3d3d3d; */
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-index li {
+    font-size: 0.8rem;
+    margin: 0rem 1rem;
+  }
 }
 
 a {
@@ -79,7 +100,7 @@ a {
   position: absolute;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -89,7 +110,6 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
   height: 100vh;
   width: 100%;
   background: rgba(33, 125, 187, 0.4);
@@ -102,7 +122,6 @@ a {
   justify-content: center;
   align-items: center;
   width: auto;
-  margin-top: 20%;
   /* opacity: 0; */
 }
 
@@ -147,13 +166,9 @@ a {
 
 /* that circle down button on the page */
 #lead-down {
-  position: relative;
-  left: 0;
-  right: 0;
   width: 100%;
   text-align: center;
-  /* z-index: 5; */
-  bottom: 45px;
+  margin-bottom: 1rem;
   color: #fff;
 }
 
@@ -237,7 +252,8 @@ a {
 
 /* portfolio section ************************************************* */
 #portfolio {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: #f2f2f5;
   border-bottom: 1px solid #dcd9d9;
@@ -325,7 +341,7 @@ a {
 }
 
 .skills li {
-  margin: 1rem 1rem;
+  margin: 0rem 1rem;
   font-weight: bolder;
   font-family: "Abril Fatface", sans-serif;
   font-size: 1.2rem;
@@ -532,7 +548,7 @@ a {
   width: 100%;
   height: 100%;
   background: white;
-  z-index: 1;
+  /* z-index: 1; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -562,4 +578,8 @@ a {
 .contact2 p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+body.hide {
+  overflow: hidden;
 }
