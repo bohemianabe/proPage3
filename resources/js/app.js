@@ -11,7 +11,7 @@ function introAnimation (){
     const nav = document.querySelector('.nav-header')
     // gsap
     gsap.fromTo(titleBanner, {opacity: 0}, { opacity: 1, duration: 3, ease: 'power2.inOut'})
-    gsap.fromTo(nav, {y: '-100%'}, {y: '0%', duration: 4, ease: 'power4.out'}, '=-1.5')
+    gsap.fromTo(nav, {y: '-150%'}, {y: '0%', duration: 4, ease: 'power4.out'}, '=-1.5')
 }
 
 function navToggle(e){
@@ -38,13 +38,25 @@ function navToggle(e){
     }
 }
 
-function projToggle(e){
-    console.log(e)
+function projActive(e, index, div){
+    projNum = e.target.getAttribute('dataset')
+    indexNum = index.getAttribute('dataset')
+    projectNames.forEach(proj => {
+        proj.classList.remove('active')
+    });
+    if(Number(projNum) == indexNum){
+        e.target.classList.add('active');
+    }
+
+    console.log(typeof(projNum), typeof indexNum)
 }
 
-projectNames.addEventListener('click', (e)=>{
-    projToggle(e);
-});
+projectNames.forEach((div, index) => {
+    div.addEventListener('click', (e) => {
+        projActive(e, div, index)
+    })
+})
+
 // burger animation 
 burger.addEventListener('click', navToggle);
 introAnimation()
