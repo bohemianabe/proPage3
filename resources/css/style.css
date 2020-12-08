@@ -600,6 +600,10 @@ a {
   padding: 3rem 0rem;
 }
 
+.nav-links a:hover {
+  color: #0427c7;
+}
+
 .contact2 {
   flex-basis: 30rem;
 }

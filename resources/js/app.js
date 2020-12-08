@@ -64,7 +64,7 @@ function projActive(e, index, div){
 function lineFadeAnim(e){
     const project = e.target.childNodes[1];
     if(project){
-        gsap.fromTo(project, {opacity: 0, x: "-50%"}, {opacity: 1, x: "0%", duration: 1.5, ease: 'power2.inOut'})
+        gsap.fromTo(project, {opacity: 0, x: "-50%"}, {opacity: 1, x: "0%", duration: 1.2, ease: 'power2.inOut'})
     }
 
 }
@@ -79,7 +79,7 @@ function projectSlides(e, index){
         } else {
             div.classList.add('active')
         }
-        gsap.fromTo(div, {opacity: 0, x: "-50%"}, {opacity: 1, x: "0%", duration: 2, ease: "slow (0.3, 0.4, false)"})
+        gsap.fromTo(div, {opacity: 0, scale: .8, x: "-50%"}, {opacity: 1, scale: 1, x: "0%", duration: 1.2, ease: "slow (0.3, 0.4, false)"})
     })
 }
 
