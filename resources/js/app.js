@@ -38,22 +38,56 @@ function navToggle(e){
     }
 }
 
+// funciton for the active project ul list in portfolio section 
 function projActive(e, index, div){
+    const project = e.target
     projNum = e.target.getAttribute('dataset')
     indexNum = index.getAttribute('dataset')
     projectNames.forEach(proj => {
+        const nodes = proj.childNodes
         proj.classList.remove('active')
+        if(nodes[1]){
+        nodes[1].remove()
+        }
     });
     if(Number(projNum) == indexNum){
         e.target.classList.add('active');
+        const newDiv = document.createElement("div")
+        newDiv.classList.add("project-line")
+        project.appendChild(newDiv)
+
     }
 
-    console.log(typeof(projNum), typeof indexNum)
+}
+
+// animation for the green line in portfolio seciton
+function lineFadeAnim(e){
+    const project = e.target.childNodes[1];
+    if(project){
+        gsap.fromTo(project, {opacity: 0, x: "-50%"}, {opacity: 1, x: "0%", duration: 1.5, ease: 'power2.inOut'})
+    }
+
+}
+
+// animation for the example-project slides
+function projectSlides(e, index){
+    const clickIndex = index
+    const exampleProjects = document.querySelectorAll('.example-project')
+    exampleProjects.forEach((div, index) => {
+        if(index != clickIndex){
+            div.classList.remove('active')
+        } else {
+            div.classList.add('active')
+        }
+        gsap.fromTo(div, {opacity: 0, x: "-50%"}, {opacity: 1, x: "0%", duration: 2, ease: "slow (0.3, 0.4, false)"})
+    })
 }
 
 projectNames.forEach((div, index) => {
     div.addEventListener('click', (e) => {
         projActive(e, div, index)
+        lineFadeAnim(e)
+        projectSlides(e, index)
     })
 })
 

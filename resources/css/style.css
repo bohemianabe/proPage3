@@ -277,32 +277,46 @@ a {
   color: #3d3d3d;
   cursor: pointer;
   font-family: "Playfair Display SC", sans-serif;
-  display: inline-flex;
   min-width: 150px;
-  justify-content: flex-end;
+  display: block;
+  height: 3rem;
   /* border: 2px solid red; */
 }
 
-.project-names li:hover {
-  color: #243fb8;
-}
-
-.project-circle {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  background-color: rgb(252, 56, 56);
-  margin: 0.3rem 0.6rem 0rem 0rem;
+.project-line {
+  width: auto;
+  height: 0.5rem;
+  background: green;
+  /* opacity: 0; */
   /* display: none; */
 }
+
+.project-names li:hover {
+  color: #030e3d;
+  transition: all 0.4s ease;
+}
+
+.project.active {
+  color: #0427c7;
+}
+
 .portfolio-box {
   display: inline-flex;
   /* border: 2px solid red; */
   height: 91vh;
 }
 
-.example-project {
+.example-project.active {
   display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  width: 70%;
+  height: 91vh;
+  justify-content: space-around;
+}
+
+.example-project {
+  display: none;
   flex-direction: column;
   /* border: 2px solid blue; */
   width: 70%;
