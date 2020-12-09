@@ -80,7 +80,8 @@ a {
 .line1,
 .line2 {
   width: 3rem;
-  height: 0.2rem;
+  height: 0.25rem;
+  border-radius: 0.3rem;
   margin: 0.4rem;
   background: rgb(1, 1, 41);
   pointer-events: none;
@@ -135,7 +136,7 @@ a {
 .title-banner h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(3, 1, 1);
+  color: rgb(0, 0, 0);
   font-family: "Abril Fatface", sans-serif;
 }
 
@@ -209,7 +210,7 @@ a {
 .title {
   text-align: center;
   font-family: "Abril Fatface", sans-serif;
-  color: #3b3b3b;
+  color: #070000;
 }
 .title::before {
   content: "";
@@ -244,10 +245,11 @@ a {
   color: #3d3d3d;
 }
 
-.lead span {
+.first-letter {
   font-size: 1.8rem;
   font-weight: bolder;
   color: black;
+  font-family: "Abril FatFace", cursive;
 }
 
 /* portfolio section ************************************************* */
@@ -326,8 +328,8 @@ a {
 
 .example-project img {
   height: 40%;
-  width: 80%;
-  object-fit: cover;
+  width: 90%;
+  object-fit: fill;
   align-self: center;
 }
 
@@ -342,8 +344,27 @@ a {
 
 .project-desc h3 {
   align-self: center;
-  font-weight: bold;
   margin-bottom: 1.5rem;
+  text-decoration: underline;
+  font-family: "Playfair Display SC", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  /* color: #1e0404; */
+  color: #0427c7;
+}
+
+.project-desc p {
+  text-align: justify;
+  line-break: auto;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 1.9rem;
+  color: #3d3d3d;
+}
+
+.portfolio-links {
+  color: green;
+  font-style: italic;
 }
 
 /* education & skills ********************************************* */
@@ -455,7 +476,7 @@ a {
 
 #contact {
   padding: 50px 15px;
-  background: #3498db;
+  background: #79bdec;
   text-align: center;
 }
 
@@ -476,7 +497,7 @@ a {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #1d6fa5;
+  background: #3c88bb;
   color: #fff;
   transition: 0.5s ease all;
 }
@@ -486,7 +507,7 @@ a {
   resize: none;
   border: none;
   margin-bottom: 10px;
-  background: #1d6fa5;
+  background: #3c88bb;
   color: #fff;
   display: block;
   width: 100%;

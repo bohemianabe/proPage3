@@ -64,7 +64,7 @@ function projActive(e, index, div){
 function lineFadeAnim(e){
     const project = e.target.childNodes[1];
     if(project){
-        gsap.fromTo(project, {opacity: 0, x: "-50%"}, {opacity: 1, x: "0%", duration: 1.2, ease: 'power2.inOut'})
+        gsap.fromTo(project, {opacity: 0, width: "0%"}, {opacity: 1, width: "100%", duration: 1.2, ease: 'power2.inOut'})
     }
 
 }
