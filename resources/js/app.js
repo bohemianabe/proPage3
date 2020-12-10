@@ -64,7 +64,7 @@ function projActive(e, index, div){
 function lineFadeAnim(e){
     const project = e.target.childNodes[1];
     if(project){
-        gsap.fromTo(project, {opacity: 0, width: "0%"}, {opacity: 1, width: "100%", duration: 1.2, ease: 'power2.inOut'})
+        gsap.fromTo(project, {opacity: 0, width: "0%" }, {opacity: 1, width: "100%", duration: 1.2, ease: 'power2.inOut'})
     }
 
 }
@@ -73,12 +73,15 @@ function lineFadeAnim(e){
 function projectSlides(e, index){
     const clickIndex = index
     const exampleProjects = document.querySelectorAll('.example-project')
+    const projectImg = document.querySelectorAll('.example-project img')
     exampleProjects.forEach((div, index) => {
         if(index != clickIndex){
             div.classList.remove('active')
         } else {
             div.classList.add('active')
         }
+        gsap.fromTo(projectImg, {boxShadow: 'rgb(255, 255, 255) 0px 0px 30px' }, 
+        { boxShadow: 'rgb(4, 4, 4) 0px 0px 30px', duration: 1.2, ease: 'power3.in'})
         gsap.fromTo(div, {opacity: 0, scale: .8, x: "-50%"}, {opacity: 1, scale: 1, x: "0%", duration: 1.2, ease: "slow (0.3, 0.4, false)"})
     })
 }

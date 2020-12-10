@@ -272,7 +272,7 @@ a {
 }
 
 .project-names li {
-  margin: 3rem 0rem;
+  margin: auto 0%;
   list-style: none;
   font-size: 1.2rem;
   font-weight: 900;
@@ -289,8 +289,7 @@ a {
   width: auto;
   height: 0.5rem;
   background: green;
-  /* opacity: 0; */
-  /* display: none; */
+  border-radius: 0.3rem;
 }
 
 .project-names li:hover {
@@ -330,6 +329,7 @@ a {
   height: 40%;
   width: 90%;
   object-fit: fill;
+  box-shadow: rgb(4, 4, 4) 0px 0px 30px;
   align-self: center;
 }
 
