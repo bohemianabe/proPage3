@@ -197,7 +197,7 @@ a {
 }
 
 #about-me {
-  min-height: 50vh;
+  max-height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -271,6 +271,16 @@ a {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .project-names {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
 .project-names li {
   margin: auto 0%;
   list-style: none;
@@ -285,8 +295,15 @@ a {
   /* border: 2px solid red; */
 }
 
+@media only screen and (max-width: 1000px) {
+  .project-names li {
+    margin: auto auto;
+    font-size: 0.9rem;
+    width: auto;
+  }
+}
+
 .project-line {
-  width: auto;
   height: 0.5rem;
   background: green;
   border-radius: 0.3rem;
@@ -307,6 +324,13 @@ a {
   height: 91vh;
 }
 
+@media only screen and (max-width: 1000px) {
+  .portfolio-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .example-project.active {
   display: flex;
   flex-direction: column;
@@ -323,6 +347,15 @@ a {
   width: 70%;
   height: 91vh;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .example-project.active {
+    width: 100%;
+  }
+  .example-project {
+    width: 100%;
+  }
 }
 
 .example-project img {
