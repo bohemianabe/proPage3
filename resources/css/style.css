@@ -13,6 +13,12 @@ p {
   line-height: 1.8rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
 /* nav and logo ****************************************************** */
 #logo {
   color: rgb(1, 1, 41);
@@ -41,6 +47,11 @@ p {
 
 @media only screen and (max-width: 1000px) {
   .nav-header {
+    height: 10%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav-header {
     /* border: 2px solid pink; */
   }
   .home-li {
@@ -67,7 +78,7 @@ p {
 
 @media only screen and (max-width: 1000px) {
   .nav-index li {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     margin: 0rem 1rem;
   }
 }
@@ -85,6 +96,14 @@ a {
   margin: 0.4rem;
   background: rgb(1, 1, 41);
   pointer-events: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .line1,
+  .line2 {
+    width: 4rem;
+    height: 0.5rem;
+  }
 }
 
 /* header with picture **************************************************** */
@@ -138,6 +157,15 @@ a {
   font-weight: bold;
   color: rgb(0, 0, 0);
   font-family: "Abril Fatface", sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .title-banner h1 {
+    font-size: 6rem;
+  }
+  .title-banner h2 {
+    font-size: 3rem;
+  }
 }
 
 .resume-link {
@@ -207,6 +235,12 @@ a {
   /* border: 2px solid red; */
 }
 
+@media only screen and(max-width: 1000px) {
+  #about-me {
+    min-height: 70%;
+  }
+}
+
 .title {
   text-align: center;
   font-family: "Abril Fatface", sans-serif;
@@ -235,6 +269,14 @@ a {
   transform: translateY(8px);
 }
 
+@media only screen and (max-width: 1000px) {
+  .title::before {
+    transform: translateY(63px);
+  }
+  .titile::after {
+  }
+}
+
 .about-details {
   margin: 0rem 3rem;
 }
@@ -243,6 +285,12 @@ a {
   text-align: center;
   font-size: 1.2rem;
   color: #3d3d3d;
+}
+
+@media only screen and(max-width: 1000px) {
+  .lead {
+    font-size: 2rem;
+  }
 }
 
 .first-letter {
@@ -297,7 +345,7 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .project-names li {
-    margin: auto auto;
+    margin: auto 2rem;
     font-size: 0.9rem;
     width: auto;
   }
@@ -393,6 +441,12 @@ a {
   font-family: "Trebuchet MS", sans-serif;
   line-height: 1.9rem;
   color: #3d3d3d;
+}
+
+@media only screen and(max-width: 1000px) {
+  .project-desc p {
+    font-size: 2rem;
+  }
 }
 
 .portfolio-links {
