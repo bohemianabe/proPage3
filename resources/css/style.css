@@ -448,7 +448,7 @@ a {
 .portfolio-box {
   display: inline-flex;
   /* border: 2px solid red; */
-  height: 91vh;
+  height: auto;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -488,8 +488,8 @@ a {
 }
 
 .example-project img {
-  height: 40%;
-  width: 90%;
+  height: 60%;
+  width: 80%;
   object-fit: fill;
   box-shadow: rgb(4, 4, 4) 0px 0px 30px;
   align-self: center;
@@ -526,7 +526,7 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .project-desc p {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -584,7 +584,7 @@ a {
 
 @media only screen and (max-width: 800px) {
   .skills li {
-    margin: 0rem;
+    margin: 0rem 0.2rem;
     font-size: 0.7rem;
   }
 }
@@ -600,13 +600,22 @@ a {
   width: 100%;
   height: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
 }
 
 @media only screen and (max-width: 800px) {
   .raddy {
     font-size: 0.8rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .raddy {
+    font-size: 0.8rem;
+    justify-content: center;
   }
 }
 
@@ -614,11 +623,13 @@ a {
   font-size: 2;
   color: #374054;
   margin-left: 3rem;
+  margin-top: 3rem;
 }
 
 .raddy h4 {
   color: #74808a;
   margin-left: 3rem;
+  margin-top: 3rem;
 }
 
 /* get to know me section ******************************************************** */
