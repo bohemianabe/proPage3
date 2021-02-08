@@ -331,6 +331,11 @@ a {
   color: #3d3d3d;
 }
 
+.lead a {
+  color: rgb(107, 8, 8);
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1000px) {
   .lead {
     font-size: 2rem;
