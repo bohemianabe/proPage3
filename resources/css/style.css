@@ -311,7 +311,14 @@ a {
   .title::before {
     transform: translateY(63px);
   }
-  .titile::after {
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .title::before {
+    transform: translateY(52px);
   }
 }
 
@@ -416,12 +423,12 @@ a {
 @media only screen and (max-width: 800px) {
   .project-names li {
     margin: auto 0.3rem;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 
 .project-line {
-  height: 0.5rem;
+  height: 0.2rem;
   background: green;
   border-radius: 0.3rem;
 }
@@ -442,7 +449,8 @@ a {
     height: 1.5rem;
   }
   .project-names {
-    margin-bottom: 2rem;
+    margin-bottom: none;
+    justify-content: space-between;
   }
 }
 
@@ -540,7 +548,7 @@ a {
     margin: 0.5rem;
   }
   .project-desc p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -589,7 +597,6 @@ a {
 
 @media only screen and (max-width: 800px) {
   .skills li {
-    margin: 0rem 0.2rem;
     font-size: 0.7rem;
   }
 }
@@ -614,6 +621,7 @@ a {
     font-size: 0.8rem;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -625,16 +633,16 @@ a {
 }
 
 .raddy h3 {
-  font-size: 2;
+  /* font-size: 2rem; */
   color: #374054;
-  margin-left: 3rem;
-  margin-top: 3rem;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
 .raddy h4 {
   color: #74808a;
-  margin-left: 3rem;
-  margin-top: 3rem;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
 /* get to know me section ******************************************************** */
@@ -868,6 +876,7 @@ a {
 @media only screen and (max-width: 800px) {
   .nav-links h3 {
     padding: 1.5rem 0rem;
+    font-size: 1rem;
   }
 }
 
@@ -882,6 +891,7 @@ a {
 .contact2 h2 {
   font-size: 3rem;
   padding: 2rem 0rem;
+  font-family: "Playfair Display SC", sans-serif;
 }
 
 .contact2 p {
