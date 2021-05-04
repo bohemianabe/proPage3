@@ -367,7 +367,7 @@ a {
 #portfolio {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   background: #f2f2f5;
   border-bottom: 1px solid #dcd9d9;
 }
@@ -450,7 +450,7 @@ a {
   }
   .project-names {
     margin-bottom: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 }
 
@@ -519,7 +519,7 @@ a {
 
 .project-desc h3 {
   align-self: center;
-  margin-bottom: 1.5rem;
+  margin: 0.5rem;
   text-decoration: underline;
   font-family: "Playfair Display SC", sans-serif;
   font-size: 1.2rem;
@@ -614,6 +614,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -770,7 +771,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .copyright p {
